@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import FullHeight from "react-div-100vh";
 
 export const Heading = styled.h1`
   margin: 0;
@@ -8,7 +9,10 @@ export const SubHeading = styled.h2`
   text-align: center;
 `;
 
-export const GameBoardContainer = styled.div`
+export const GameBoardContainer = styled(FullHeight)`
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
   background-color: #0f3ab3;
 `;
 
@@ -16,7 +20,7 @@ export const GameBoardHeader = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100px;
+  min-height: 100px;
   border-bottom: 1px solid #25076b;
   background-color: #3c168a;
   color: #fff;
@@ -25,8 +29,8 @@ export const GameBoardHeader = styled.div`
 export const GameBoardItemsContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start;
-  max-height: calc(100vh - 100px);
+  align-content: flex-start;
+  flex-grow: 1;
   overflow-y: scroll;
 `;
 
@@ -43,22 +47,24 @@ export const GameBoardItem = styled.div`
   font-size: 4rem;
 `;
 
-export const ScoreBoardContainer = styled.div`
-  background-color: goldenrod;
+export const ScoreBoardContainer = styled(FullHeight)`
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 `;
 
 export const ScoreBoardHeader = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100px;
+  min-height: 100px;
   border-bottom: 1px solid #aa142e;
   background-color: #b10824;
   color: #fff;
 `;
 
 export const ScoreBoardItemsContainer = styled.div`
-  height: calc(100vh - 100px - 250px);
+  flex-grow: 1;
   overflow-y: scroll;
   background-color: #ffa601;
 `;

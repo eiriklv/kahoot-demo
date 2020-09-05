@@ -5,5 +5,4 @@ export const AppContainer = styled.div`
   grid-template-columns: 1fr 35%;
   grid-template-rows: 1fr;
   background-color: yellow;
-  height: 100%;
 `;
