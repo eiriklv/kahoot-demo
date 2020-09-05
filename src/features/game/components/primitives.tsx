@@ -95,11 +95,11 @@ export const ScoreTable = styled.table`
     background-color: #fff;
     position: sticky;
     top: 0;
+    width: calc(100% / 3);
     font-size: 1.7rem;
   }
 
   td {
-    width: calc(100% / 3);
     font-size: 2rem;
   }
 `;
