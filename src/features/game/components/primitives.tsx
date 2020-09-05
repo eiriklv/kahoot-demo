@@ -72,7 +72,7 @@ export const ScoreBoardItemsContainer = styled.div`
 export const ScoreBoardFooter = styled.div`
   display: flex;
   flex-direction: column;
-  height: 250px;
+  min-height: 250px;
   border-top: 1px solid #aa142e;
   font-size: 1.5rem;
   background-color: #c60829;
