@@ -1,4 +1,5 @@
 import React from "react";
+import { useSelector, useDispatch } from "react-redux";
 
 import {
   getScoreBoard,
@@ -6,8 +7,6 @@ import {
   getTotalScore,
   resetGame,
 } from "../duck";
-
-import { useSelector, useDispatch } from "react-redux";
 
 import {
   Heading,
@@ -28,10 +27,11 @@ import {
 
 export const ScoreBoard: React.FC = (props) => {
   const dispatch = useDispatch();
-
   const scoreBoard = useSelector(getScoreBoard);
   const bonusPoints = useSelector(getBonusPoints);
   const totalScore = useSelector(getTotalScore);
+
+  const hasItems = !!scoreBoard.length;
 
   const handleNewGameClick = () => {
     dispatch(resetGame());
@@ -44,8 +44,6 @@ export const ScoreBoard: React.FC = (props) => {
       <th>Score</th>
     </ScoreTableHeaderRow>
   );
-
-  const hasItems = !!scoreBoard.length;
 
   const scoreTableDataRows = scoreBoard.map((scoreBoardItem) => (
     <ScoreTableDataRow>

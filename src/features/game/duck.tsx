@@ -12,7 +12,6 @@ export const NAME = "@game";
  * Types, interfaces and constants
  */
 export const RESET_GAME = "@game/RESET_GAME";
-export const START_GAME = "@game/START_GAME";
 export const COLLECT_ITEM = "@game/COLLECT_ITEM";
 
 export interface ResetGameAction {
@@ -147,9 +146,9 @@ export default function reducer(
   action: GameAction
 ): GameState {
   switch (action.type) {
-    case "@game/RESET_GAME":
+    case RESET_GAME:
       return initialGameState;
-    case "@game/COLLECT_ITEM":
+    case COLLECT_ITEM:
       const collectedItem = state.board[action.payload.index];
       return {
         ...state,

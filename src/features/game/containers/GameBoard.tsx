@@ -1,5 +1,6 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
+
 import { getGameBoard, collectItem } from "../duck";
 
 import {
@@ -11,8 +12,8 @@ import {
 } from "../components/primitives";
 
 export const GameBoard: React.FC = (props) => {
-  const gameBoard = useSelector(getGameBoard);
   const dispatch = useDispatch();
+  const gameBoard = useSelector(getGameBoard);
 
   const handleItemClick = (index: number) => {
     dispatch(collectItem(index));
