@@ -1,6 +1,6 @@
 ## Kahoot Demo Game
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Latest deployment found on [vullum.io/kahoot-demo](https://www.vullum.io/kahoot-demo).
 
 ## Available Scripts
 
