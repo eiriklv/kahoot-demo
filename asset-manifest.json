@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/kahoot-demo/static/css/main.dc032eab.chunk.css",
-    "main.js": "/kahoot-demo/static/js/main.c565da92.chunk.js",
-    "main.js.map": "/kahoot-demo/static/js/main.c565da92.chunk.js.map",
+    "main.js": "/kahoot-demo/static/js/main.af857535.chunk.js",
+    "main.js.map": "/kahoot-demo/static/js/main.af857535.chunk.js.map",
     "runtime-main.js": "/kahoot-demo/static/js/runtime-main.1bac9878.js",
     "runtime-main.js.map": "/kahoot-demo/static/js/runtime-main.1bac9878.js.map",
     "static/js/2.f72abaf2.chunk.js": "/kahoot-demo/static/js/2.f72abaf2.chunk.js",
     "static/js/2.f72abaf2.chunk.js.map": "/kahoot-demo/static/js/2.f72abaf2.chunk.js.map",
     "index.html": "/kahoot-demo/index.html",
-    "precache-manifest.72877e8d8e98392be192247d921ec20d.js": "/kahoot-demo/precache-manifest.72877e8d8e98392be192247d921ec20d.js",
+    "precache-manifest.53babd6bf89e35f4ee5b3bea3591f974.js": "/kahoot-demo/precache-manifest.53babd6bf89e35f4ee5b3bea3591f974.js",
     "service-worker.js": "/kahoot-demo/service-worker.js",
     "static/css/main.dc032eab.chunk.css.map": "/kahoot-demo/static/css/main.dc032eab.chunk.css.map",
     "static/js/2.f72abaf2.chunk.js.LICENSE.txt": "/kahoot-demo/static/js/2.f72abaf2.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.1bac9878.js",
     "static/js/2.f72abaf2.chunk.js",
     "static/css/main.dc032eab.chunk.css",
-    "static/js/main.c565da92.chunk.js"
+    "static/js/main.af857535.chunk.js"
   ]
 }
