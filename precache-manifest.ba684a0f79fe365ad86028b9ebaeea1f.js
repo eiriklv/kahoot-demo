@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7f129ebf7051b9da3b447ce107e6b420",
+    "revision": "219b082cb6e0d166919171e5eaa9d7aa",
     "url": "/kahoot-demo/index.html"
   },
   {
-    "revision": "5567da14c1f4ff1ca50d",
+    "revision": "c8fc39fa8e6c6617350e",
     "url": "/kahoot-demo/static/css/main.31b8f7e7.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/kahoot-demo/static/js/2.a8e83b03.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "5567da14c1f4ff1ca50d",
-    "url": "/kahoot-demo/static/js/main.204fa7ee.chunk.js"
+    "revision": "c8fc39fa8e6c6617350e",
+    "url": "/kahoot-demo/static/js/main.93205cf9.chunk.js"
   },
   {
     "revision": "34b5388d4eeb7d12dc11",
