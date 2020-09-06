@@ -5,9 +5,9 @@ import { getGameBoard, collectItem } from "../duck";
 
 import {
   GameBoardItem,
-  GameBoardContainer,
+  GameBoardWrapper,
   GameBoardHeader,
-  GameBoardItemsContainer,
+  GameBoardItemsWrapper,
   Heading,
 } from "../components/primitives";
 
@@ -19,18 +19,21 @@ export const GameBoard: React.FC = (props) => {
     dispatch(collectItem(index));
   };
 
-  const gameItemElements = gameBoard.map((boardItem, index) => (
-    <GameBoardItem onClick={() => handleItemClick(index)}>
+  const boardItemElements = gameBoard.map((boardItem, index) => (
+    <GameBoardItem
+      key={`${index}-${boardItem}`}
+      onClick={() => handleItemClick(index)}
+    >
       {boardItem}
     </GameBoardItem>
   ));
 
   return (
-    <GameBoardContainer>
+    <GameBoardWrapper>
       <GameBoardHeader>
         <Heading>Kahoot! Points</Heading>
       </GameBoardHeader>
-      <GameBoardItemsContainer>{gameItemElements}</GameBoardItemsContainer>
-    </GameBoardContainer>
+      <GameBoardItemsWrapper>{boardItemElements}</GameBoardItemsWrapper>
+    </GameBoardWrapper>
   );
 };

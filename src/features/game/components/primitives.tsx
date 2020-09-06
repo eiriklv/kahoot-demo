@@ -9,7 +9,7 @@ export const SubHeading = styled.h2`
   text-align: center;
 `;
 
-export const GameBoardContainer = styled(FullHeight)`
+export const GameBoardWrapper = styled(FullHeight)`
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -26,7 +26,7 @@ export const GameBoardHeader = styled.div`
   color: #fff;
 `;
 
-export const GameBoardItemsContainer = styled.div`
+export const GameBoardItemsWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
@@ -47,7 +47,7 @@ export const GameBoardItem = styled.div`
   font-size: 4rem;
 `;
 
-export const ScoreBoardContainer = styled(FullHeight)`
+export const ScoreBoardWrapper = styled(FullHeight)`
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -63,7 +63,7 @@ export const ScoreBoardHeader = styled.div`
   color: #fff;
 `;
 
-export const ScoreBoardItemsContainer = styled.div`
+export const ScoreBoardItemsWrapper = styled.div`
   flex-grow: 1;
   overflow-y: scroll;
   background-color: #ffa601;
@@ -89,7 +89,6 @@ export const ScoreTable = styled.table`
   text-align: center;
   border-collapse: collapse;
   font-size: 1.2rem;
-  border-spacing: 0 5px;
 
   th {
     background-color: #fff;
@@ -105,40 +104,38 @@ export const ScoreTable = styled.table`
 `;
 
 export const ScoreTableHeaderRow = styled.tr`
-  height: 100px;
+  height: 5rem;
 `;
 
 export const ScoreTableDataRow = styled.tr`
   background-color: #ffc009;
 `;
 
-export const ScoreTableCell = styled.td``;
-
 export const ScoreItem = styled.div`
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 70px;
-  height: 70px;
-  margin: 20px;
+  width: 4rem;
+  height: 4rem;
+  margin: 1rem;
   font-size: 3.5rem;
   background-color: #41c4df;
   color: #fff;
   border-radius: 10px;
 `;
 
-export const PointsContainer = styled.div`
+export const PointsWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid #aa142e;
 
   h3 {
-    margin: 10px 20px;
+    margin: 0.5rem 1.5rem;
   }
 `;
 
-export const ButtonContainer = styled.div`
+export const ActionsWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -147,9 +144,9 @@ export const ButtonContainer = styled.div`
 
 export const Button = styled.button`
   width: 100%;
-  margin: 0 20px;
-  font-size: 2rem;
+  margin: 0 1.5rem;
   padding: 2rem;
+  font-size: 2rem;
   border: 1px solid #fff;
   border-radius: 10px;
   background-color: #27890d;

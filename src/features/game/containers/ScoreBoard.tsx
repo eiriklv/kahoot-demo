@@ -11,17 +11,16 @@ import {
 import {
   Heading,
   SubHeading,
-  ScoreBoardContainer,
+  ScoreBoardWrapper,
   ScoreBoardHeader,
-  ScoreBoardItemsContainer,
+  ScoreBoardItemsWrapper,
   ScoreBoardFooter,
   ScoreTable,
   ScoreTableHeaderRow,
   ScoreTableDataRow,
-  ScoreTableCell,
   ScoreItem,
-  PointsContainer,
-  ButtonContainer,
+  PointsWrapper,
+  ActionsWrapper,
   Button,
 } from "../components/primitives";
 
@@ -30,8 +29,7 @@ export const ScoreBoard: React.FC = (props) => {
   const scoreBoard = useSelector(getScoreBoard);
   const bonusPoints = useSelector(getBonusPoints);
   const totalScore = useSelector(getTotalScore);
-
-  const hasItems = !!scoreBoard.length;
+  const hasStarted = !!scoreBoard.length;
 
   const handleNewGameClick = () => {
     dispatch(resetGame());
@@ -45,41 +43,41 @@ export const ScoreBoard: React.FC = (props) => {
     </ScoreTableHeaderRow>
   );
 
-  const scoreTableDataRows = scoreBoard.map((scoreBoardItem) => (
-    <ScoreTableDataRow>
-      <ScoreTableCell>
+  const scoreTableDataRows = scoreBoard.map((scoreBoardItem, index) => (
+    <ScoreTableDataRow key={`${index}-${scoreBoardItem.type}`}>
+      <td>
         <ScoreItem>{scoreBoardItem.type}</ScoreItem>
-      </ScoreTableCell>
-      <ScoreTableCell>{scoreBoardItem.quantity}</ScoreTableCell>
-      <ScoreTableCell>{scoreBoardItem.points}</ScoreTableCell>
+      </td>
+      <td>{scoreBoardItem.quantity}</td>
+      <td>{scoreBoardItem.points}</td>
     </ScoreTableDataRow>
   ));
 
   return (
-    <ScoreBoardContainer>
+    <ScoreBoardWrapper>
       <ScoreBoardHeader>
         <Heading>Player Items</Heading>
       </ScoreBoardHeader>
-      <ScoreBoardItemsContainer>
+      <ScoreBoardItemsWrapper>
         <ScoreTable>
-          {scoreTableHeaderRow}
-          {scoreTableDataRows}
+          <thead>{scoreTableHeaderRow}</thead>
+          <tbody>{scoreTableDataRows}</tbody>
         </ScoreTable>
-        {!hasItems && <SubHeading>Collect items!</SubHeading>}
-      </ScoreBoardItemsContainer>
+        {!hasStarted && <SubHeading>Collect items!</SubHeading>}
+      </ScoreBoardItemsWrapper>
       <ScoreBoardFooter>
-        <PointsContainer>
+        <PointsWrapper>
           <h3>Bonuses:</h3>
           <h3>{bonusPoints}</h3>
-        </PointsContainer>
-        <PointsContainer>
+        </PointsWrapper>
+        <PointsWrapper>
           <h3>Total:</h3>
           <h3>{totalScore}</h3>
-        </PointsContainer>
-        <ButtonContainer>
+        </PointsWrapper>
+        <ActionsWrapper>
           <Button onClick={handleNewGameClick}>New Game</Button>
-        </ButtonContainer>
+        </ActionsWrapper>
       </ScoreBoardFooter>
-    </ScoreBoardContainer>
+    </ScoreBoardWrapper>
   );
 };
