@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GameBoard renders correctly when empty 1`] = `
+<div
+  className="sc-eCApGN lgxGRR"
+/>
+`;
+
+exports[`GameBoard renders correctly when filled 1`] = `
+<div
+  className="sc-eCApGN lgxGRR"
+>
+  <div
+    className="sc-jSFkmK jEMJdT"
+    onClick={[Function]}
+  >
+    A
+  </div>
+  <div
+    className="sc-jSFkmK jEMJdT"
+    onClick={[Function]}
+  >
+    B
+  </div>
+  <div
+    className="sc-jSFkmK jEMJdT"
+    onClick={[Function]}
+  >
+    C
+  </div>
+  <div
+    className="sc-jSFkmK jEMJdT"
+    onClick={[Function]}
+  >
+    D
+  </div>
+  <div
+    className="sc-jSFkmK jEMJdT"
+    onClick={[Function]}
+  >
+    A
+  </div>
+  <div
+    className="sc-jSFkmK jEMJdT"
+    onClick={[Function]}
+  >
+    B
+  </div>
+  <div
+    className="sc-jSFkmK jEMJdT"
+    onClick={[Function]}
+  >
+    C
+  </div>
+</div>
+`;

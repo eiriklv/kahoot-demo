@@ -10,38 +10,36 @@ import {
 
 import {
   Heading,
-  SubHeading,
+  ScoresWrapper,
+  ScoresHeader,
   ScoreBoardWrapper,
-  ScoreBoardHeader,
-  ScoreBoardTableWrapper,
-  ScoreBoardFooter,
+  ScoresFooter,
   PointsWrapper,
   ActionsWrapper,
   Button,
 } from "../components/primitives";
-import { ScoreTable } from "../components/ScoreTable";
 
-export const ScoreBoard: React.FC = (props) => {
+import { ScoreBoard } from "../components/ScoreBoard";
+
+export const Scores: React.FC = () => {
   const dispatch = useDispatch();
   const scoreBoard = useSelector(getScoreBoard);
   const bonusPoints = useSelector(getBonusPoints);
   const totalScore = useSelector(getTotalScore);
-  const hasStarted = !!scoreBoard.length;
 
   const handleNewGameClick = () => {
     dispatch(resetGame());
   };
 
   return (
-    <ScoreBoardWrapper id="scoreBoard">
-      <ScoreBoardHeader>
+    <ScoresWrapper id="scores">
+      <ScoresHeader>
         <Heading>Player Items</Heading>
-      </ScoreBoardHeader>
-      <ScoreBoardTableWrapper>
-        <ScoreTable scoreBoard={scoreBoard} />
-        {!hasStarted && <SubHeading>Collect items!</SubHeading>}
-      </ScoreBoardTableWrapper>
-      <ScoreBoardFooter>
+      </ScoresHeader>
+      <ScoreBoardWrapper>
+        <ScoreBoard scoreBoard={scoreBoard} />
+      </ScoreBoardWrapper>
+      <ScoresFooter>
         <PointsWrapper>
           <h3>Bonuses:</h3>
           <h3>{bonusPoints}</h3>
@@ -53,7 +51,7 @@ export const ScoreBoard: React.FC = (props) => {
         <ActionsWrapper>
           <Button onClick={handleNewGameClick}>New Game</Button>
         </ActionsWrapper>
-      </ScoreBoardFooter>
-    </ScoreBoardWrapper>
+      </ScoresFooter>
+    </ScoresWrapper>
   );
 };

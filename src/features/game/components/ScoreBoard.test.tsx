@@ -1,14 +1,14 @@
 import React from "react";
 import renderer from "react-test-renderer";
-import { ScoreTable } from "./ScoreTable";
+import { ScoreBoard } from "./ScoreBoard";
 import { ScoreBoardItem } from "../duck";
 
-describe("ScoreTable", () => {
+describe("ScoreBoard", () => {
   test("renders correctly when empty", () => {
     const scoreBoard: ScoreBoardItem[] = [];
 
     const tree = renderer
-      .create(<ScoreTable scoreBoard={scoreBoard} />)
+      .create(<ScoreBoard scoreBoard={scoreBoard} />)
       .toJSON();
 
     expect(tree).toMatchSnapshot();
@@ -39,7 +39,7 @@ describe("ScoreTable", () => {
     ];
 
     const tree = renderer
-      .create(<ScoreTable scoreBoard={scoreBoard} />)
+      .create(<ScoreBoard scoreBoard={scoreBoard} />)
       .toJSON();
 
     expect(tree).toMatchSnapshot();

@@ -9,14 +9,14 @@ export const SubHeading = styled.h2`
   text-align: center;
 `;
 
-export const GameBoardWrapper = styled(FullHeight)`
+export const GameWrapper = styled(FullHeight)`
   display: flex;
   flex-direction: column;
   height: 100vh;
   background-color: #0f3ab3;
 `;
 
-export const GameBoardHeader = styled.div`
+export const GameHeader = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -26,7 +26,7 @@ export const GameBoardHeader = styled.div`
   color: #fff;
 `;
 
-export const GameBoardItemsWrapper = styled.div`
+export const GameBoardWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
@@ -47,13 +47,13 @@ export const GameBoardItem = styled.div`
   font-size: 4rem;
 `;
 
-export const ScoreBoardWrapper = styled(FullHeight)`
+export const ScoresWrapper = styled(FullHeight)`
   display: flex;
   flex-direction: column;
   height: 100vh;
 `;
 
-export const ScoreBoardHeader = styled.div`
+export const ScoresHeader = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -63,13 +63,13 @@ export const ScoreBoardHeader = styled.div`
   color: #fff;
 `;
 
-export const ScoreBoardTableWrapper = styled.div`
+export const ScoreBoardWrapper = styled.div`
   flex-grow: 1;
   overflow-y: scroll;
   background-color: #ffa601;
 `;
 
-export const ScoreBoardFooter = styled.div`
+export const ScoresFooter = styled.div`
   display: flex;
   flex-direction: column;
   min-height: 250px;

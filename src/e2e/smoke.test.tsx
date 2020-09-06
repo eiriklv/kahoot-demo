@@ -17,7 +17,7 @@ afterAll(() => {
 });
 
 describe("Smoke test", () => {
-  test("Gameboard heading loads correctly", async () => {
+  test("Game heading loads correctly", async () => {
     let browser = await puppeteer.launch({
       headless: true,
     });
@@ -33,15 +33,15 @@ describe("Smoke test", () => {
     });
 
     await page.goto(serverUrl);
-    await page.waitForSelector("#gameBoard");
+    await page.waitForSelector("#game");
 
-    const html = await page.$eval("#gameBoard > div > h1", (e) => e.innerHTML);
+    const html = await page.$eval("#game > div > h1", (e) => e.innerHTML);
     expect(html).toBe("Kahoot! Points");
 
     browser.close();
   }, 16000);
 
-  test("Scoreboard heading loads correctly", async () => {
+  test("Scores heading loads correctly", async () => {
     let browser = await puppeteer.launch({
       headless: true,
     });
@@ -57,9 +57,9 @@ describe("Smoke test", () => {
     });
 
     await page.goto(serverUrl);
-    await page.waitForSelector("#scoreBoard");
+    await page.waitForSelector("#scores");
 
-    const html = await page.$eval("#scoreBoard > div > h1", (e) => e.innerHTML);
+    const html = await page.$eval("#scores > div > h1", (e) => e.innerHTML);
     expect(html).toBe("Player Items");
 
     browser.close();

@@ -1,15 +1,15 @@
 import React from "react";
 
-import { GameBoard } from "./features/game/containers/GameBoard";
-import { ScoreBoard } from "./features/game/containers/ScoreBoard";
-import { AppContainer } from "./shared/components/primitives";
+import { Game } from "./features/game/containers/Game";
+import { Scores } from "./features/game/containers/Scores";
+import { Grid } from "./shared/components/primitives";
 
 function App() {
   return (
-    <AppContainer>
-      <GameBoard />
-      <ScoreBoard />
-    </AppContainer>
+    <Grid>
+      <Game />
+      <Scores />
+    </Grid>
   );
 }
 

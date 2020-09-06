@@ -1,20 +1,22 @@
 import React from "react";
 
 import { ScoreBoardItem } from "../duck";
-
 import {
   Table,
   TableHeaderRow,
   TableDataRow,
   ScoreItem,
-} from "../components/primitives";
+  SubHeading,
+} from "./primitives";
 
-interface ScoreTableProps {
+interface ScoreBoardProps {
   scoreBoard: ScoreBoardItem[];
 }
 
-export const ScoreTable: React.FC<ScoreTableProps> = ({ scoreBoard }) => {
-  const scoreTableHeaderRow = (
+export const ScoreBoard: React.FC<ScoreBoardProps> = ({ scoreBoard = [] }) => {
+  const hasStarted = !!scoreBoard.length;
+
+  const scoreBoardHeaderRow = (
     <TableHeaderRow>
       <th>Item</th>
       <th>Qty</th>
@@ -22,7 +24,7 @@ export const ScoreTable: React.FC<ScoreTableProps> = ({ scoreBoard }) => {
     </TableHeaderRow>
   );
 
-  const scoreTableDataRows = scoreBoard.map((scoreBoardItem, index) => (
+  const scoreBoardDataRows = scoreBoard.map((scoreBoardItem, index) => (
     <TableDataRow key={`${index}-${scoreBoardItem.type}`}>
       <td>
         <ScoreItem>{scoreBoardItem.type}</ScoreItem>
@@ -33,9 +35,12 @@ export const ScoreTable: React.FC<ScoreTableProps> = ({ scoreBoard }) => {
   ));
 
   return (
-    <Table>
-      <thead>{scoreTableHeaderRow}</thead>
-      <tbody>{scoreTableDataRows}</tbody>
-    </Table>
+    <>
+      <Table>
+        <thead>{scoreBoardHeaderRow}</thead>
+        <tbody>{scoreBoardDataRows}</tbody>
+      </Table>
+      {!hasStarted && <SubHeading>Collect items!</SubHeading>}
+    </>
   );
 };

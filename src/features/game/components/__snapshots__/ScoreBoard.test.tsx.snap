@@ -1,29 +1,36 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ScoreTable renders correctly when empty 1`] = `
-<table
-  className="sc-jrsJCI cmYUgl"
->
-  <thead>
-    <tr
-      className="sc-kEqYlL sAggq"
-    >
-      <th>
-        Item
-      </th>
-      <th>
-        Qty
-      </th>
-      <th>
-        Score
-      </th>
-    </tr>
-  </thead>
-  <tbody />
-</table>
+exports[`ScoreBoard renders correctly when empty 1`] = `
+Array [
+  <table
+    className="sc-jrsJCI cmYUgl"
+  >
+    <thead>
+      <tr
+        className="sc-kEqYlL sAggq"
+      >
+        <th>
+          Item
+        </th>
+        <th>
+          Qty
+        </th>
+        <th>
+          Score
+        </th>
+      </tr>
+    </thead>
+    <tbody />
+  </table>,
+  <h2
+    className="sc-gtssRu fmAOC"
+  >
+    Collect items!
+  </h2>,
+]
 `;
 
-exports[`ScoreTable renders correctly when filled 1`] = `
+exports[`ScoreBoard renders correctly when filled 1`] = `
 <table
   className="sc-jrsJCI cmYUgl"
 >
