@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/kahoot-demo/precache-manifest.b89f077504d4bd60262dd4a53fa5b9c0.js"
+  "/kahoot-demo/precache-manifest.c8ce150716cf7a7a4e7eab1667530aa8.js"
 );
 
 self.addEventListener('message', (event) => {
