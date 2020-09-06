@@ -48,4 +48,4 @@ Deploys the app to Github Pages.
 
 ## CI / CD
 
-Automatic deployment to Github pages for master branch
+Automatic deployment to Github Pages for master branch
