@@ -7,6 +7,11 @@ Built using
 - Redux
 - Reselect
 - Styled Components
+- Jest and Puppeteer for E2E / smoke testing
+
+For now this app is quite simple, but with more complex requirements and interaction with a backend I would have added Redux Saga to handle control flow / side-effects and something like axios to perform requests.
+
+With more time I would also have added Storybook + storyshots to do visual unit/snapshot testing of React components.
 
 Latest deployment found on [vullum.io/kahoot-demo](https://www.vullum.io/kahoot-demo).
 
