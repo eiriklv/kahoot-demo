@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/kahoot-demo/static/css/main.31b8f7e7.chunk.css",
-    "main.js": "/kahoot-demo/static/js/main.e9a961ac.chunk.js",
-    "main.js.map": "/kahoot-demo/static/js/main.e9a961ac.chunk.js.map",
-    "runtime-main.js": "/kahoot-demo/static/js/runtime-main.1bac9878.js",
-    "runtime-main.js.map": "/kahoot-demo/static/js/runtime-main.1bac9878.js.map",
-    "static/js/2.a8e83b03.chunk.js": "/kahoot-demo/static/js/2.a8e83b03.chunk.js",
-    "static/js/2.a8e83b03.chunk.js.map": "/kahoot-demo/static/js/2.a8e83b03.chunk.js.map",
-    "index.html": "/kahoot-demo/index.html",
-    "precache-manifest.c8ce150716cf7a7a4e7eab1667530aa8.js": "/kahoot-demo/precache-manifest.c8ce150716cf7a7a4e7eab1667530aa8.js",
-    "service-worker.js": "/kahoot-demo/service-worker.js",
-    "static/css/main.31b8f7e7.chunk.css.map": "/kahoot-demo/static/css/main.31b8f7e7.chunk.css.map",
-    "static/js/2.a8e83b03.chunk.js.LICENSE.txt": "/kahoot-demo/static/js/2.a8e83b03.chunk.js.LICENSE.txt"
+    "main.css": "./static/css/main.31b8f7e7.chunk.css",
+    "main.js": "./static/js/main.ffd593b1.chunk.js",
+    "main.js.map": "./static/js/main.ffd593b1.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.43756abd.js",
+    "runtime-main.js.map": "./static/js/runtime-main.43756abd.js.map",
+    "static/js/2.707fc98e.chunk.js": "./static/js/2.707fc98e.chunk.js",
+    "static/js/2.707fc98e.chunk.js.map": "./static/js/2.707fc98e.chunk.js.map",
+    "index.html": "./index.html",
+    "precache-manifest.18fe2ee8850652ad0626a3286abf8efa.js": "./precache-manifest.18fe2ee8850652ad0626a3286abf8efa.js",
+    "service-worker.js": "./service-worker.js",
+    "static/css/main.31b8f7e7.chunk.css.map": "./static/css/main.31b8f7e7.chunk.css.map",
+    "static/js/2.707fc98e.chunk.js.LICENSE.txt": "./static/js/2.707fc98e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.1bac9878.js",
-    "static/js/2.a8e83b03.chunk.js",
+    "static/js/runtime-main.43756abd.js",
+    "static/js/2.707fc98e.chunk.js",
     "static/css/main.31b8f7e7.chunk.css",
-    "static/js/main.e9a961ac.chunk.js"
+    "static/js/main.ffd593b1.chunk.js"
   ]
 }
