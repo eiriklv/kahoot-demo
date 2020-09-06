@@ -13,16 +13,13 @@ import {
   SubHeading,
   ScoreBoardWrapper,
   ScoreBoardHeader,
-  ScoreBoardItemsWrapper,
+  ScoreBoardTableWrapper,
   ScoreBoardFooter,
-  ScoreTable,
-  ScoreTableHeaderRow,
-  ScoreTableDataRow,
-  ScoreItem,
   PointsWrapper,
   ActionsWrapper,
   Button,
 } from "../components/primitives";
+import { ScoreTable } from "../components/ScoreTable";
 
 export const ScoreBoard: React.FC = (props) => {
   const dispatch = useDispatch();
@@ -35,36 +32,15 @@ export const ScoreBoard: React.FC = (props) => {
     dispatch(resetGame());
   };
 
-  const scoreTableHeaderRow = (
-    <ScoreTableHeaderRow>
-      <th>Item</th>
-      <th>Qty</th>
-      <th>Score</th>
-    </ScoreTableHeaderRow>
-  );
-
-  const scoreTableDataRows = scoreBoard.map((scoreBoardItem, index) => (
-    <ScoreTableDataRow key={`${index}-${scoreBoardItem.type}`}>
-      <td>
-        <ScoreItem>{scoreBoardItem.type}</ScoreItem>
-      </td>
-      <td>{scoreBoardItem.quantity}</td>
-      <td>{scoreBoardItem.points}</td>
-    </ScoreTableDataRow>
-  ));
-
   return (
     <ScoreBoardWrapper id="scoreBoard">
       <ScoreBoardHeader>
         <Heading>Player Items</Heading>
       </ScoreBoardHeader>
-      <ScoreBoardItemsWrapper>
-        <ScoreTable>
-          <thead>{scoreTableHeaderRow}</thead>
-          <tbody>{scoreTableDataRows}</tbody>
-        </ScoreTable>
+      <ScoreBoardTableWrapper>
+        <ScoreTable scoreBoard={scoreBoard} />
         {!hasStarted && <SubHeading>Collect items!</SubHeading>}
-      </ScoreBoardItemsWrapper>
+      </ScoreBoardTableWrapper>
       <ScoreBoardFooter>
         <PointsWrapper>
           <h3>Bonuses:</h3>

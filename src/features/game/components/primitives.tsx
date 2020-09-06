@@ -63,7 +63,7 @@ export const ScoreBoardHeader = styled.div`
   color: #fff;
 `;
 
-export const ScoreBoardItemsWrapper = styled.div`
+export const ScoreBoardTableWrapper = styled.div`
   flex-grow: 1;
   overflow-y: scroll;
   background-color: #ffa601;
@@ -83,7 +83,7 @@ export const ScoreBoardFooter = styled.div`
   }
 `;
 
-export const ScoreTable = styled.table`
+export const Table = styled.table`
   position: relative;
   width: 100%;
   text-align: center;
@@ -103,11 +103,11 @@ export const ScoreTable = styled.table`
   }
 `;
 
-export const ScoreTableHeaderRow = styled.tr`
+export const TableHeaderRow = styled.tr`
   height: 5rem;
 `;
 
-export const ScoreTableDataRow = styled.tr`
+export const TableDataRow = styled.tr`
   background-color: #ffc009;
 `;
 

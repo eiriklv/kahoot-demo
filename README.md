@@ -11,7 +11,7 @@ Built using:
 - Redux
 - Reselect
 - Styled Components
-- Jest for unit testing
+- Jest for unit and snapshot testing
 - Jest and Puppeteer for E2E / smoke testing
 - Prettier and Husky for ensuring code style on stage/commit
 

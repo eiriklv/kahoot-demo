@@ -1,0 +1,116 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ScoreTable renders correctly when empty 1`] = `
+<table
+  className="sc-jrsJCI cmYUgl"
+>
+  <thead>
+    <tr
+      className="sc-kEqYlL sAggq"
+    >
+      <th>
+        Item
+      </th>
+      <th>
+        Qty
+      </th>
+      <th>
+        Score
+      </th>
+    </tr>
+  </thead>
+  <tbody />
+</table>
+`;
+
+exports[`ScoreTable renders correctly when filled 1`] = `
+<table
+  className="sc-jrsJCI cmYUgl"
+>
+  <thead>
+    <tr
+      className="sc-kEqYlL sAggq"
+    >
+      <th>
+        Item
+      </th>
+      <th>
+        Qty
+      </th>
+      <th>
+        Score
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr
+      className="sc-iqAbSa cdwkfS"
+    >
+      <td>
+        <div
+          className="sc-crzoUp jKxFQz"
+        >
+          A
+        </div>
+      </td>
+      <td>
+        4
+      </td>
+      <td>
+        250
+      </td>
+    </tr>
+    <tr
+      className="sc-iqAbSa cdwkfS"
+    >
+      <td>
+        <div
+          className="sc-crzoUp jKxFQz"
+        >
+          B
+        </div>
+      </td>
+      <td>
+        3
+      </td>
+      <td>
+        120
+      </td>
+    </tr>
+    <tr
+      className="sc-iqAbSa cdwkfS"
+    >
+      <td>
+        <div
+          className="sc-crzoUp jKxFQz"
+        >
+          C
+        </div>
+      </td>
+      <td>
+        2
+      </td>
+      <td>
+        40
+      </td>
+    </tr>
+    <tr
+      className="sc-iqAbSa cdwkfS"
+    >
+      <td>
+        <div
+          className="sc-crzoUp jKxFQz"
+        >
+          D
+        </div>
+      </td>
+      <td>
+        1
+      </td>
+      <td>
+        15
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;
