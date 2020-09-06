@@ -26,11 +26,14 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Run the tests
+      - name: Run unit tests
         run: npm test
 
       - name: Build
         run: npm run build
+
+      - name: Run smoke tests
+        run: npm run test:e2e
 
       - name: Deploy
         run: |

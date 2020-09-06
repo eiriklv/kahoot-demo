@@ -54,7 +54,7 @@ export const ScoreBoard: React.FC = (props) => {
   ));
 
   return (
-    <ScoreBoardWrapper>
+    <ScoreBoardWrapper id="scoreBoard">
       <ScoreBoardHeader>
         <Heading>Player Items</Heading>
       </ScoreBoardHeader>

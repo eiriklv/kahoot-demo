@@ -29,7 +29,7 @@ export const GameBoard: React.FC = (props) => {
   ));
 
   return (
-    <GameBoardWrapper>
+    <GameBoardWrapper id="gameBoard">
       <GameBoardHeader>
         <Heading>Kahoot! Points</Heading>
       </GameBoardHeader>
