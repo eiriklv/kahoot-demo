@@ -1,19 +1,23 @@
 ## Kahoot Demo Game
 
-Built using
+Latest deployment found on [vullum.io/kahoot-demo](https://www.vullum.io/kahoot-demo).
+
+Built using:
 
 - TypeScript
 - React (bootstrapped using CRA)
 - Redux
 - Reselect
 - Styled Components
+- Jest for unit testing
 - Jest and Puppeteer for E2E / smoke testing
+- Prettier and Husky for ensuring code style on stage/commit
+
+Continuous integration and deployment is done using Github Actions
 
 For now this app is quite simple, but with more complex requirements and interaction with a backend I would have added Redux Saga to handle control flow / side-effects and something like axios to perform requests.
 
 With more time I would also have added Storybook + storyshots to do visual unit/snapshot testing of React components.
-
-Latest deployment found on [vullum.io/kahoot-demo](https://www.vullum.io/kahoot-demo).
 
 ## Available Scripts
 
