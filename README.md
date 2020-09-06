@@ -30,11 +30,11 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ### `npm test`
 
-Unit tests<br />
+Runs unit tests<br />
 
 ### `npm run test:e2e`
 
-End-to-end tests<br />
+Runs end-to-end tests<br />
 
 ### `npm run build`
 
@@ -44,6 +44,6 @@ Builds the app for production to the `build` folder.<br />
 
 Deploys the app to Github Pages.
 
-## Deployment
+## CI / CD
 
 Automatic deployment to Github pages for master branch
