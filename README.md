@@ -1,5 +1,7 @@
 ## Kahoot Demo Game
 
+![Ipad Screenshot](https://i.ibb.co/QbBsGMq/Skjermbilde-2020-09-06-kl-19-28-40.png)
+
 Latest deployment found on [vullum.io/kahoot-demo](https://www.vullum.io/kahoot-demo).
 
 Built using:
