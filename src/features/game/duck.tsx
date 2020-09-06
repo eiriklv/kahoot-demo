@@ -85,7 +85,7 @@ export const getScoreBoard = createSelector(
           (scoringDefinition) => scoringDefinition.type === type
         ) || {};
 
-      const itemPoints = partition.reduce((sum, item) => sum + points, 0);
+      const itemPoints = partition.length * points;
 
       const itemBonus = bonus
         .slice(0, partition.length)
