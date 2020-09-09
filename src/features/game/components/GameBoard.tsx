@@ -3,12 +3,12 @@ import React from "react";
 import { BoardItem } from "../duck";
 import { GameBoardItem, GameBoardWrapper } from "../components/primitives";
 
-interface ScoreBoardProps {
+interface GameBoardProps {
   gameBoard: BoardItem[];
   onItemClick: (index: number) => void;
 }
 
-export const GameBoard: React.FC<ScoreBoardProps> = ({
+export const GameBoard: React.FC<GameBoardProps> = ({
   gameBoard,
   onItemClick,
 }) => {
